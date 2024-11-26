@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Candal");
+
+.Home {
+  .banner {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 0rem 4rem;
+
+    .left {
+      flex: 1;
+      position: relative;
+
+      .banner_text {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        h1 {
+          font-size: 3.5rem;
+          font-family: "Candal", cursive;
+          color: #ff6200ce;
+          margin: 0;
+        }
+
+        p {
+          margin: 0;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+        a {
+          text-decoration: none;
+          padding: 0.5rem 2rem;
+          border-radius: 10px;
+          border: 2px solid #ff6200ce;
+          background-color: #fff;
+          color: #ff6200ce;
+          font-weight: 700;
+          font-size: 1.2rem;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+          margin-top: 2rem;
+          font-family: "Raleway";
+          font-weight: bold;
+
+          &:hover {
+            background-color: #ff6200ce;
+            color: #fff;
+            transform: scale(103%);
+            transition: all 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+    }
+  }
+
+  .mobile_design {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #7ecbff54;
+    padding: 4rem;
+    border-bottom-right-radius: 25rem 25rem;
+    border-bottom-left-radius: 25rem 15rem;
+
+    .left {
+      flex: 1;
+      padding: 1rem 2rem;
+      text-align: left;
+
+      h1 {
+        font-size: 2rem;
+        font-family: "Raleway", cursive;
+        color: #7eccff;
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .meta {
+        display: flex;
+
+        .packages {
+          flex: 1;
+          h4 {
+            margin: 0;
+            font-size: 1.3rem;
+          }
+
+          ul {
+            li {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              margin-bottom: 1rem;
+
+              #icon {
+                font-size: 2rem;
+                color: #7eccff;
+              }
+            }
+          }
+        }
+
+        .platforms {
+          flex: 1;
+          h4 {
+            margin: 0;
+            font-size: 1.3rem;
+          }
+
+          ul {
+            li {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              margin-bottom: 1rem;
+
+              #icon {
+                font-size: 2rem;
+                color: #7eccff;
+              }
+            }
+          }
+        }
+      }
+
+      button {
+        padding: 0.5rem 2rem;
+        border-radius: 10px;
+        border: 2px solid #fff;
+        background-color: #7eccff;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        margin-top: 2rem;
+        font-family: "Raleway";
+
+        &:hover {
+          background-color: #fff;
+          color: #7eccff;
+          transform: scale(103%);
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      img {
+        height: 40rem;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .websites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0rem;
+
+    .top {
+      margin-bottom: 2rem;
+
+      h1 {
+        font-size: 2rem;
+        font-family: "Raleway", cursive;
+        color: #7eccff;
+        margin: 0;
+        margin-bottom: 3rem;
+      }
+
+      img {
+        height: 40rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 6px #7ecbffa4;
+        margin-left: 1rem;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 1rem;
+        margin: 0;
+        margin-bottom: 3rem;
+      }
+
+      h4 {
+        margin: 0;
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+        color: #ff6200ce;
+        text-align: left;
+      }
+
+      .types {
+        display: flex;
+        justify-content: space-between;
+
+        .complex {
+          flex: 1;
+
+          ul {
+            li {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              margin-bottom: 1rem;
+
+              #icon {
+                font-size: 2rem;
+                color: #7eccff;
+              }
+            }
+          }
+        }
+      }
+
+      button {
+        padding: 0.5rem 2rem;
+        border-radius: 10px;
+        border: 2px solid #ff6200ce;
+        background-color: #fff;
+        color: #ff6200ce;
+        font-weight: 700;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        margin-top: 2rem;
+        font-family: "Raleway";
+        align-self: flex-end;
+
+        &:hover {
+          background-color: #ff6200ce;
+          color: #fff;
+          transform: scale(103%);
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+  .testimonials {
+    position: relative;
+
+    .testimonials_text {
+      position: absolute;
+      top: 20%;
+      left: 15%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      h1 {
+        font-size: 3.5rem;
+        font-family: "Candal", cursive;
+        color: #fff;
+        margin: 0;
+        width: 20rem;
+      }
+    }
+
+    .testimonials_container {
+      position: absolute;
+      top: 30%;
+      left: 40%;
+      background-color: #fff;
+      height: 50vh;
+      width: 50rem;
+      border-radius: 30px;
+      opacity: 0.6;
+      display: flex;
+      align-items: center;
+      overflow-y: scroll;
+    }
+  }
+
+  .our_clients {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 4rem;
+
+    h1 {
+      font-size: 2rem;
+      font-family: "Raleway", cursive;
+      color: #7eccff;
+      margin: 0;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 3rem;
+    }
+
+    .section_body {
+      display: flex;
+      width: 70%;
+
+      .partners {
+        flex: 1;
+        text-align: left;
+
+        h4 {
+          margin: 0;
+          margin-bottom: 3rem;
+          text-align: center;
+        }
+
+        .list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 3rem;
+
+          .list_item {
+            width: 15rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            img {
+              height: 10rem;
+              width: 10rem;
+              object-fit: contain;
+              border-radius: 50%;
+            }
+
+            #fin {
+              height: 6rem;
+              height: 6rem;
+              padding: 2rem;
+            }
+
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      .customers {
+        flex: 1;
+        text-align: left;
+
+        h4 {
+          margin: 0;
+          margin-bottom: 3rem;
+          text-align: center;
+        }
+
+        .list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 3rem;
+
+          .list_item {
+            width: 15rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            img {
+              height: 10rem;
+              width: 10rem;
+              object-fit: contain;
+              border-radius: 50%;
+            }
+
+            #green {
+              background-color: #008000;
+              padding: 2rem;
+              width: 5rem;
+              height: 5rem;
+            }
+
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

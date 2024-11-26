@@ -1,0 +1,132 @@
+.Navbar {
+  .top_bar {
+    height: 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .id {
+      display: flex;
+      align-items: flex-start;
+
+      #nav_logo {
+        height: 4.5rem;
+        opacity: 0.7;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: "Raleway";
+        font-size: 0.6rem;
+        color: #000;
+        border: 1px solid #000;
+        padding: 0.3rem;
+        border-radius: 50%;
+      }
+    }
+
+    .site_actions {
+      .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+
+        h4 {
+          margin: 0;
+          color: #ff6000;
+        }
+
+        #number {
+          border: 2px solid #ff6200ce;
+          padding: 0.5rem 2rem;
+          border-radius: 10px;
+          color: #ff6200ce;
+          margin: 0;
+          font-weight: bold;
+
+          &:hover {
+            background-color: #ff6000ce;
+            color: #fff;
+            transform: scale(103%);
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            border: 2px solid #ff6000ce;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom_bar {
+    background-color: #7eccff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 1px;
+      width: 20rem;
+
+      a {
+        padding: 1rem;
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      a.active {
+        border: 2px solid #7eccff;
+        background-color: #fff;
+      }
+
+      a:hover {
+        background-color: #fff;
+      }
+    }
+
+    .sub_menus {
+      position: absolute;
+      top: 100%;
+      left: 45.9%;
+      width: 10rem;
+      background-color: #7eccff;
+      display: flex;
+      flex-direction: column;      
+      text-align: left;
+      z-index: 40;
+      
+      a {
+        padding: 1rem;
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+        border: 2px solid #7eccff;
+      }
+
+      a:hover {
+        background-color: #fff;
+        border: 2px solid #7eccff;
+      }
+
+      a.active {
+        border: 2px solid #7eccff;
+        background-color: #fff;
+      }
+    }
+
+    .right {
+      position: absolute;
+      top: 100%;
+      left: 51.7%;
+      width: 15rem;
+    }
+  }
+}

@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Candal");
+
+.About {
+  padding: 0;
+
+  .intro_banner {
+    background-color: #fff;
+    height: 80vh;
+    display: flex;
+    padding: 2rem 4rem;
+
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+
+      h1 {
+        margin: 0;
+        font-size: 6rem;
+        font-family: "Candal";
+        color: #ff6000ce;
+      }
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .about_us {
+    height: 50vh;
+    background-color: #fff;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    position: relative;
+
+    p {
+      margin: 0;
+      font-weight: bold;
+      font-size: 1.5rem;
+      width: 70%;
+    }
+  }
+
+  .mission-vision {
+    height: 70vh;
+    background-color: #fff;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #7ecbff;
+    }
+
+    .container {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      height: 80%;
+
+      .cont-item {
+        flex: 1;
+        position: relative;
+
+        .heading {
+          background-color: #7ecbff;
+          color: #fff;
+          width: fit-content;
+          padding: 1rem 2rem;
+          position: absolute;
+          top: -50%;
+          left: -2%;
+          box-shadow: 0px 0px 10px 0px #7ecbff;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          border-radius: 20px;
+        }
+
+        .body {
+          background-color: #7ecbff54;
+          padding: 1rem 2rem;
+          width: 30rem;
+          border-radius: 20px;
+          color: #ff6000;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .core-values {
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+
+    .back {
+      position: absolute;
+      top: -24%;
+      padding: 2rem;
+      background-color: #fff;
+      height: 20rem;
+      width: 20rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      box-shadow: 0px 5px 0px 0px #ff6000, inset 0 -5px 0 #fff,
+        0 10px 0 #0000;
+
+      .heading-circle {
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .bubble {
+          height: 3rem;
+          width: 20rem;
+          background-color: #7ecbff;
+          color: #fff;
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+          border-bottom-right-radius: 100px;
+          border-bottom-left-radius: 100px;
+          position: absolute;
+          top: 70%;
+          font-size: 2rem;
+        }
+
+        h1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+          color: #fff;
+
+          #heart {
+            font-size: 6rem;
+            color: #7ecbff;
+          }
+        }
+      }
+    }
+
+    .values-body {
+      background-color: #7ecbff;
+      width: 50%;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 8rem 2rem 15rem 2rem;
+      border-bottom-left-radius: 360px;
+      border-bottom-right-radius: 360px;
+      box-shadow: 0px 30px 0px 0px #ff6000, inset 0 -15px 0 #fff,
+        0 45px 0 #0000;
+
+      .value {
+        width: 45%;
+        height: 15rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        border-radius: 20px;
+
+        span {
+          background-color: #7ecbff54;
+          height: 8rem;
+          width: 8rem;
+          border-radius: 50%;
+          font-size: 5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

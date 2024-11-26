@@ -1,0 +1,49 @@
+.TestimonialsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 4rem;
+
+
+    .quote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40rem;
+
+        #icon_L {
+            font-size: 3rem;
+            color: #ff6000;
+            margin-bottom: 1rem;
+            align-self: start;
+        }
+
+        p {
+            width: 25rem;
+            align-self: center;
+        }
+
+        #icon_R {
+            font-size: 3rem;
+            color: #ff6000;
+            margin-top: 1rem;
+            align-self: end;
+        }
+    }
+
+    .details {
+
+        h4 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #ff6200ce;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 0;
+            text-align: right;
+        }
+    }
+}
