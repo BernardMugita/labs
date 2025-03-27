@@ -9,10 +9,10 @@
   h1 {
     background: linear-gradient(
       to right,
-      #ff6000ce,
-      #7ecbff,
-      #ff6000,
-      #7ecbff54
+      #eb5e28,
+      #252422,
+      #f7f7f7,
+      #252422
     );
     background-clip: border-box;
     -webkit-text-fill-color: transparent;
@@ -25,19 +25,20 @@
   p {
     margin: 0;
     font-size: 1.3rem;
+    color: #f7f7f7;
   }
 
   .notify {
-    background-color: #fff;
+    background-color: #252422;
     padding: 3rem 2rem;
-    box-shadow: 0px 5px 15px 0px #d8d8d8, inset 0 -15px 0 #ff6200ab,
+    box-shadow: 0px 5px 15px 0px #252422, inset 0 -15px 0 #eb5e28,
       0 45px 0 #0000;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 3rem;
-    width: 18%;
+    width: 50%;
 
     label { 
         border: 1px solid #f1f1f1;
@@ -57,7 +58,7 @@
             padding: 1rem;
             font-family: 'Raleway';
             border: none;
-            background-color: #ff6000ce;
+            background-color: #eb5e28;
             color: #fff;
             font-weight: bold;
         }
@@ -65,6 +66,7 @@
 
     #check {
         border: none;
+        color: #f7f7f7;
 
         span {
             font-size: 1rem;

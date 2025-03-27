@@ -12,12 +12,11 @@ const Blog = (props: Props) => {
       </p>
       <div className="notify">
         <label htmlFor="">
-            <input type="text" placeholder="Please enter your email address"/>
-            <button>Notify me</button>
+          <input type="text" placeholder="Please enter your email address" />
+          <button>Notify me</button>
         </label>
         <label htmlFor="" id="check">
-            <input type="checkbox" name=""  />
-            <span>Notify me when the product is ready.</span>
+          <span>Notify me when the product is ready.</span>
         </label>
       </div>
     </div>

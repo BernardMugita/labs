@@ -1,172 +1,245 @@
 @import url("https://fonts.googleapis.com/css2?family=Candal");
 
 .Home {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
   .banner {
-    height: 90vh;
+    height: 80vh;
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: #252422;
     padding: 0rem 4rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
 
-    .left {
-      flex: 1;
-      position: relative;
+    .interior-banner {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 0.5rem;
 
-      .banner_text {
-        position: absolute;
-        top: 40%;
-        left: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+      .left {
+        flex: 1;
+        border: 1px solid #403d39;
+        position: relative;
+        height: 80vh;
 
-        h1 {
-          font-size: 3.5rem;
-          font-family: "Candal", cursive;
-          color: #ff6200ce;
-          margin: 0;
-        }
+        .banner_text {
+          position: absolute;
+          top: 40%;
+          left: 30%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 
-        p {
-          margin: 0;
-          font-size: 1.2rem;
-          font-weight: bold;
-        }
+          h1 {
+            font-size: 3.5rem;
+            font-family: "Candal", cursive;
+            color: #f7f7f7;
+            margin: 0;
+          }
 
-        a {
-          text-decoration: none;
-          padding: 0.5rem 2rem;
-          border-radius: 10px;
-          border: 2px solid #ff6200ce;
-          background-color: #fff;
-          color: #ff6200ce;
-          font-weight: 700;
-          font-size: 1.2rem;
-          cursor: pointer;
-          transition: all 0.2s ease-in-out;
-          margin-top: 2rem;
-          font-family: "Raleway";
-          font-weight: bold;
+          p {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #eb5e28;
+          }
 
-          &:hover {
-            background-color: #ff6200ce;
-            color: #fff;
-            transform: scale(103%);
+          a {
+            text-decoration: none;
+            padding: 0.5rem 2rem;
+            border-radius: 10px;
+            border: 2px solid #ff6200ce;
+            background-color: #252422;
+            color: #ff6200ce;
+            font-weight: 700;
+            font-size: 1.2rem;
+            cursor: pointer;
             transition: all 0.2s ease-in-out;
+            margin-top: 2rem;
+            font-family: "Raleway";
+            font-weight: bold;
+
+            &:hover {
+              background-color: #ff6200ce;
+              color: #fff;
+              transform: scale(103%);
+              transition: all 0.2s ease-in-out;
+            }
           }
         }
       }
-    }
 
-    .right {
-      flex: 1;
+      .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 70vh;
+        width: 100%;
+        background-color: #eb5e28;
+        padding: 5rem;
+        border-radius: 5px;
+        z-index: 10;
+        gap: 5px;
+
+        .banner-item {
+          display: flex;
+          flex-direction: row-reverse;
+          gap: 0.5rem;
+          align-items: center;
+          justify-content: flex-start;
+          background-color: #252422;
+          padding: 0.5rem 2rem;
+          width: 55%;
+          border-radius: 5px;
+
+          h4 {
+            margin: 0;
+            color: #f7f7f7;
+          }
+
+          #banner-icon {
+            font-size: 3rem;
+            color: #f7f7f7;
+          }
+        }
+      }
     }
   }
 
   .mobile_design {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color: #7ecbff54;
-    padding: 4rem;
-    border-bottom-right-radius: 25rem 25rem;
-    border-bottom-left-radius: 25rem 15rem;
+    height: 90vh;
 
-    .left {
-      flex: 1;
-      padding: 1rem 2rem;
-      text-align: left;
+    .mobile-interior {
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      background-color: #eb5e2854;
+      padding: 4rem;
+      border-bottom-right-radius: 25rem 25rem;
+      border-bottom-left-radius: 25rem 15rem;
+      position: relative;
 
-      h1 {
-        font-size: 2rem;
-        font-family: "Raleway", cursive;
-        color: #7eccff;
-        margin: 0;
-        margin-bottom: 1rem;
+      .outlier-one {
+        width: 80rem;
+        position: absolute;
+        background-color: #eb5e28;
+        height: 5rem;
+        top: 50%;
+        right: -40%;
+        transform: rotate(-45deg);
+        border-radius: 10px;
       }
 
-      p {
-        margin: 0;
-        font-size: 1.2rem;
-        font-weight: bold;
+      .outlier-two {
+        position: absolute;
+        top: 50%;
+        right: -10%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #eb5e28;
+        border-radius: 10px;
+        width: 5rem;
+        height: 50rem;
       }
 
-      .meta {
-        display: flex;
+      .left {
+        flex: 1;
+        padding: 1rem 2rem;
+        text-align: left;
 
-        .packages {
-          flex: 1;
-          h4 {
-            margin: 0;
-            font-size: 1.3rem;
-          }
+        h1 {
+          font-size: 2rem;
+          font-family: "Raleway", cursive;
+          color: #eb5e28;
+          margin: 0;
+          margin-bottom: 1rem;
+        }
 
-          ul {
-            li {
+        p {
+          margin: 0;
+          font-size: 1rem;
+          font-weight: bold;
+          color: #f7f7f7;
+        }
+
+        .meta {
+          display: flex;
+
+          .packages,
+          .platforms {
+            flex: 1;
+
+            h4 {
+              color: #eb5e28;
+              font-weight: bold;
+              border-bottom: 1px solid #eb5e28;
+              padding-bottom: 0.5rem;
+              width: 75%;
+            }
+
+            .package {
+              background-image: url(../../Resources/marker.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              height: 4rem;
               display: flex;
               align-items: center;
-              gap: 1rem;
-              margin-bottom: 1rem;
+              justify-content: flex-start;
+              gap: 0.5rem;
 
-              #icon {
-                font-size: 2rem;
+              #native {
+                font-size: 3.5rem;
+                color: #008000;
+              }
+
+              #flutter {
+                font-size: 3.5rem;
                 color: #7eccff;
+              }
+            }
+
+            .platform {
+              background-image: url(../../Resources/marker.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              height: 4rem;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 0.5rem;
+
+              #android {
+                font-size: 3.5rem;
+                color: #008000;
+              }
+
+              #ios {
+                font-size: 3.5rem;
+                color: #000;
               }
             }
           }
         }
-
-        .platforms {
-          flex: 1;
-          h4 {
-            margin: 0;
-            font-size: 1.3rem;
-          }
-
-          ul {
-            li {
-              display: flex;
-              align-items: center;
-              gap: 1rem;
-              margin-bottom: 1rem;
-
-              #icon {
-                font-size: 2rem;
-                color: #7eccff;
-              }
-            }
-          }
-        }
       }
 
-      button {
-        padding: 0.5rem 2rem;
+      .right {
+        flex: 1;
+        border: 1px solid #eb5e28;
+        height: 30vh;
         border-radius: 10px;
-        border: 2px solid #fff;
-        background-color: #7eccff;
-        color: #fff;
-        font-weight: 700;
-        font-size: 1.2rem;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-        margin-top: 2rem;
-        font-family: "Raleway";
+        z-index: 50;
 
-        &:hover {
-          background-color: #fff;
-          color: #7eccff;
-          transform: scale(103%);
-          transition: all 0.2s ease-in-out;
+        img {
+          height: 40rem;
+          border-radius: 10px;
+          margin-top: -3.5rem;
         }
-      }
-    }
-
-    .right {
-      flex: 1;
-      img {
-        height: 40rem;
-        border-radius: 10px;
       }
     }
   }
@@ -176,7 +249,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 4rem 0rem;
+    padding: 2rem 0rem;
 
     .top {
       margin-bottom: 2rem;
@@ -184,7 +257,7 @@
       h1 {
         font-size: 2rem;
         font-family: "Raleway", cursive;
-        color: #7eccff;
+        color: #eb5e28;
         margin: 0;
         margin-bottom: 3rem;
       }
@@ -192,19 +265,27 @@
       img {
         height: 40rem;
         border-radius: 10px;
-        box-shadow: 0px 0px 10px 6px #7ecbffa4;
+        box-shadow: 0px 0px 10px 6px #252422;
         margin-left: 1rem;
+      }
+
+      #web {
+        width: 75%;
       }
     }
 
     .bottom {
       display: flex;
       flex-direction: column;
+      background-color: #252422;
+      padding: 2rem;
+      border-radius: 10px;
 
       p {
         font-size: 1rem;
         margin: 0;
         margin-bottom: 3rem;
+        color: #f7f7f7;
       }
 
       h4 {
@@ -213,6 +294,8 @@
         margin-bottom: 3rem;
         color: #ff6200ce;
         text-align: left;
+        border-bottom: 1px solid #eb5e28;
+        padding-bottom: 0.5rem;
       }
 
       .types {
@@ -228,10 +311,11 @@
               align-items: center;
               gap: 1rem;
               margin-bottom: 1rem;
+              color: #f7f7f7;
 
               #icon {
                 font-size: 2rem;
-                color: #7eccff;
+                color: #eb5e28;
               }
             }
           }
@@ -298,17 +382,15 @@
   }
 
   .our_clients {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0rem 4rem;
+    padding: 2rem;
+    margin: 2rem 0;
 
     h1 {
       font-size: 2rem;
       font-family: "Raleway", cursive;
-      color: #7eccff;
+      color: #eb5e28;
       margin: 0;
       margin-bottom: 3rem;
     }
@@ -316,96 +398,27 @@
     p {
       margin: 0;
       margin-bottom: 3rem;
+      color: #f7f7f7;
     }
 
     .section_body {
       display: flex;
-      width: 70%;
+      align-items: center;
+      justify-content: center;
 
-      .partners {
-        flex: 1;
-        text-align: left;
-
-        h4 {
-          margin: 0;
-          margin-bottom: 3rem;
-          text-align: center;
-        }
-
-        .list {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 3rem;
-
-          .list_item {
-            width: 15rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 2rem;
-
-            img {
-              height: 10rem;
-              width: 10rem;
-              object-fit: contain;
-              border-radius: 50%;
-            }
-
-            #fin {
-              height: 6rem;
-              height: 6rem;
-              padding: 2rem;
-            }
-
-            p {
-              margin: 0;
-            }
-          }
-        }
-      }
-
-      .customers {
-        flex: 1;
-        text-align: left;
+      .trust-body {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
 
         h4 {
-          margin: 0;
-          margin-bottom: 3rem;
-          text-align: center;
+          font-size: 1.5rem;
+          color: #eb5e28;
         }
 
-        .list {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 3rem;
-
-          .list_item {
-            width: 15rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 2rem;
-
-            img {
-              height: 10rem;
-              width: 10rem;
-              object-fit: contain;
-              border-radius: 50%;
-            }
-
-            #green {
-              background-color: #008000;
-              padding: 2rem;
-              width: 5rem;
-              height: 5rem;
-            }
-
-            p {
-              margin: 0;
-            }
-          }
+        img {
+          width: 7rem;
+          object-fit: contain;
         }
       }
     }

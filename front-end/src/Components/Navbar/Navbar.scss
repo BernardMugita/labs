@@ -1,4 +1,7 @@
 .Navbar {
+  width: 75%;
+  z-index: 50;
+
   .top_bar {
     height: 2rem;
     padding: 2rem;
@@ -8,21 +11,20 @@
 
     .id {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
+      gap: 0.5rem;
 
       #nav_logo {
-        height: 4.5rem;
+        height: 3rem;
         opacity: 0.7;
       }
 
-      h1 {
+      h4 {
         margin: 0;
         font-family: "Raleway";
-        font-size: 0.6rem;
-        color: #000;
-        border: 1px solid #000;
-        padding: 0.3rem;
-        border-radius: 50%;
+        color: #eb5e28;
+        font-size: 1.5rem;
+        font-weight: bold;
       }
     }
 
@@ -39,20 +41,20 @@
         }
 
         #number {
-          border: 2px solid #ff6200ce;
+          border: 2px solid #eb5e28;
           padding: 0.5rem 2rem;
           border-radius: 10px;
-          color: #ff6200ce;
+          color: #eb5e28;
           margin: 0;
           font-weight: bold;
 
           &:hover {
-            background-color: #ff6000ce;
+            background-color: #eb5e28;
             color: #fff;
             transform: scale(103%);
             transition: all 0.2s ease-in-out;
             cursor: pointer;
-            border: 2px solid #ff6000ce;
+            border: 2px solid #eb5e28;
           }
         }
       }
@@ -60,11 +62,12 @@
   }
 
   .bottom_bar {
-    background-color: #7eccff;
+    background-color: #252422;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    border-radius: 5px;
 
     .links {
       display: flex;
@@ -75,7 +78,7 @@
       a {
         padding: 1rem;
         text-decoration: none;
-        color: #000;
+        color: #f7f7f7;
         font-weight: 700;
         display: flex;
         align-items: center;
@@ -83,49 +86,49 @@
       }
 
       a.active {
-        border: 2px solid #7eccff;
-        background-color: #fff;
+        border: 2px solid #eb5e28;
+        background-color: #eb5e28;
       }
 
       a:hover {
-        background-color: #fff;
+        background-color: #eb5e28;
       }
     }
 
     .sub_menus {
       position: absolute;
       top: 100%;
-      left: 45.9%;
+      left: 43.95%;
       width: 10rem;
-      background-color: #7eccff;
+      background-color: #252422;
       display: flex;
-      flex-direction: column;      
+      flex-direction: column;
       text-align: left;
       z-index: 40;
-      
+
       a {
         padding: 1rem;
         text-decoration: none;
-        color: #000;
+        color: #f7f7f7;
         font-weight: 700;
-        border: 2px solid #7eccff;
+        border: 2px solid #403d39;
       }
 
       a:hover {
-        background-color: #fff;
-        border: 2px solid #7eccff;
+        background-color: #eb5e28;
+        border: 2px solid #eb5e28;
       }
 
       a.active {
-        border: 2px solid #7eccff;
-        background-color: #fff;
+        border: 2px solid #eb5e28;
+        background-color: #eb5e28;
       }
     }
 
     .right {
       position: absolute;
       top: 100%;
-      left: 51.7%;
+      left: 51.3%;
       width: 15rem;
     }
   }

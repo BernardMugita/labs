@@ -11,6 +11,7 @@ import Blog from "./Pages/Blog/Blog";
 import Finalyze from "./Pages/Finalyze/finalyze";
 import Policy from "./Pages/Policy/policy";
 import Purge from "./Pages/Purge/purge";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -19,8 +20,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/about/about_us" element={<About />} />
           <Route path="/about/our_team" element={<OurTeam />} />
+          <Route path="/services" element={<MobileApps />} />
           <Route path="/services/mobile_apps" element={<MobileApps />} />
           <Route path="/services/mobile_apps/finalyze_2.0" element={<Finalyze />} />
           <Route path="/services/mobile_apps/finalyze_2.0/privacy_policy" element={<Policy />} />
@@ -32,6 +35,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact_us" element={<ContactUs />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

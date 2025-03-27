@@ -2,14 +2,17 @@
 
 .MobileApps {
   padding: 0rem 0rem 4rem 0rem;
+  width: 75%;
 
   .mobile-intro {
     height: 70vh;
-    background-color: #7ecbff54;
+    background-color: #eb5e2854;
+    border-radius: 5px;
     border-bottom-right-radius: 1000px 550px;
     box-shadow: 2px 35px 3px 5px #0000;
     position: relative;
     text-align: left;
+    margin-top: 0.5rem;
 
     .mobile-text {
       display: flex;
@@ -19,14 +22,14 @@
       h1 {
         margin: 0;
         font-family: "Candal";
-        color: #ff6000ce;
+        color: #eb5e28;
         font-size: 3rem;
         margin-top: 10rem;
       }
 
       p {
         width: 70%;
-        color: #000;
+        color: #f7f7f7;
         font-weight: bold;
         font-size: 1.3rem;
         text-align: center;
@@ -34,7 +37,7 @@
     }
 
     .triangle-one {
-      border-bottom: 150px solid #7ecbff54;
+      border-bottom: 150px solid #eb5e2854;
       border-right: 100px solid transparent;
       border-left: 100px solid transparent;
       border-radius: 30px 50px;
@@ -44,7 +47,7 @@
     }
 
     .two {
-      border-bottom: 50px solid #7ecbff54;
+      border-bottom: 50px solid #eb5e2854;
       border-right: 50px solid transparent;
       border-left: 50px solid transparent;
       top: 53%;
@@ -52,7 +55,7 @@
     }
 
     .three {
-      border-bottom: 50px solid #7ecbff54;
+      border-bottom: 50px solid #eb5e2854;
       border-right: 50px solid transparent;
       border-left: 50px solid transparent;
       top: 20%;
@@ -66,14 +69,14 @@
   }
 
   .budget {
-    background-color: #fff;
+    background-color: #252422;
     height: 20rem;
     width: 30rem;
     position: absolute;
     top: 65%;
     left: 50%;
     transform: translate(-50%);
-    box-shadow: 0px 5px 15px 0px #d8d8d8, inset 0 -15px 0 #ff6200ab,
+    box-shadow: 0px 5px 15px 0px #252422, inset 0 -15px 0 #ff6200ab,
       0 45px 0 #0000;
     border-radius: 20px;
     padding: 1rem 2rem;
@@ -83,6 +86,8 @@
 
     h2 {
       color: #ff6000ce;
+      border-bottom: 1px solid #eb5e28;
+      padding-bottom: 0.5rem;
     }
 
     label {
@@ -90,6 +95,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 5rem;
+      color: #f7f7f7;
 
       input {
         width: 50%;
@@ -121,7 +127,7 @@
 
     h2 {
       margin: 0;
-      color: #7ecbff;
+      color: #eb5e28;
       font-size: 2.5rem;
     }
 
@@ -140,115 +146,79 @@
           flex: 1;
           position: relative;
           display: flex;
-          flex-direction: column;
           align-items: center;
           padding: 2rem;
 
-          img {
-            height: 40rem;
-            width: 18%;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 6px #52a87ea4;
-            margin-bottom: 3rem;
+          .stroke {
+            flex: 1;
+
+            img {
+              height: 40rem;
+              border-radius: 10px;
+              box-shadow: 0px 0px 10px 6px #252422;
+              margin-bottom: 3rem;
+            }
           }
 
           .screen-text {
-            background-color: #272727;
-            box-shadow: 2px 5px 5px 5px #f1f1f1;
+            flex: 1;
             padding: 1rem 2rem;
             border-radius: 20px;
             text-align-last: left;
-            width: 45%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-            h3 {
-              color: #52a87e;
-              font-weight: bolder;
+            img {
+              width: 100%;
+              object-fit: cover;
             }
 
-            span {
+            .text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
               display: flex;
-              align-items: center;
-              justify-content: space-between;
-              color: #d8d8d8;
+              flex-direction: column;
 
-              p {
-                color: #52a87e;
+              h3 {
+                color: #eb5e28;
+                border-bottom: 1px solid #eb5e28;
+                padding-bottom: 0.5rem;
+                font-size: 2rem;
+              }
+
+              span {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                color: #eb5e28;
+                width: 30rem;
+
+                p {
+                  color: #f7f7f7;
+                }
+              }
+
+              .view-more {
+                color: #eb5e28;
+                font-size: 1.5rem;
+                border: 1px solid #eb5e28;
+                padding: 0.5rem 1rem;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: fit-content;
+                align-self: flex-end;
               }
             }
           }
         }
-      }
-
-      .row-one {
-        display: flex;
-        gap: 2rem;
-
-        .left {
-          flex: 1;
-
-          img {
-            height: 40rem;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 6px #0d3c46a4;
-            margin-bottom: 3rem;
-          }
-
-          .screen-text {
-            background-color: #0d3c46;
-            box-shadow: 2px 5px 5px 5px #f1f1f1;
-            padding: 1rem 2rem;
-            border-radius: 20px;
-            text-align-last: left;
-
-            h3 {
-              color: #50a38c;
-            }
-
-            span {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              color: #fff;
-
-              p  {
-                color: #50a38c;
-              }
-            }
-          }
-        }
-
-        .right {
-          flex: 1;
-          height: 40rem;
-          position: relative;
-
-          img {
-            height: 40rem;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 6px #ffab91a4;
-            margin-bottom: 3rem;
-          }
-
-          .screen-text {
-            background-color: #ffab91;
-            box-shadow: 2px 5px 5px 5px #f1f1f1;
-            padding: 1rem 2rem;
-            border-radius: 20px;
-            text-align-last: left;
-
-            h3 {
-              color: #000;
-            }
-
-            span {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              color: #fff;
-            }
-          }
-        }
-      }
+      }      
     }
   }
 }

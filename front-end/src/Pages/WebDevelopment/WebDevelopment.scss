@@ -1,11 +1,15 @@
 .WebDevelopment {
+  width: 75%;
+
   .web-intro {
     height: 70vh;
-    background-color: #7ecbff54;
+    background-color: #eb5e2854;
+    border-radius: 5px;
     border-bottom-right-radius: 1000px 550px;
     box-shadow: 2px 35px 3px 5px #0000;
     position: relative;
     text-align: left;
+    margin-top: 0.5rem;
 
     .web-text {
       display: flex;
@@ -15,14 +19,14 @@
       h1 {
         margin: 0;
         font-family: "Candal";
-        color: #ff6000ce;
+        color: #eb5e28;
         font-size: 3rem;
         margin-top: 10rem;
       }
 
       p {
         width: 70%;
-        color: #000;
+        color: #f7f7f7;
         font-weight: bold;
         font-size: 1.3rem;
         text-align: center;
@@ -30,7 +34,7 @@
     }
 
     .triangle-one {
-      border-bottom: 150px solid #7ecbff54;
+      border-bottom: 150px solid #eb5e2854;
       border-right: 100px solid transparent;
       border-left: 100px solid transparent;
       border-radius: 30px 50px;
@@ -40,7 +44,7 @@
     }
 
     .two {
-      border-bottom: 50px solid #7ecbff54;
+      border-bottom: 50px solid #eb5e2854;
       border-right: 50px solid transparent;
       border-left: 50px solid transparent;
       top: 53%;
@@ -48,7 +52,7 @@
     }
 
     .three {
-      border-bottom: 50px solid #7ecbff54;
+      border-bottom: 50px solid #eb5e2854;
       border-right: 50px solid transparent;
       border-left: 50px solid transparent;
       top: 20%;
@@ -62,14 +66,14 @@
   }
 
   .budget {
-    background-color: #fff;
+    background-color: #252422;
     height: 20rem;
     width: 30rem;
     position: absolute;
     top: 65%;
     left: 50%;
     transform: translate(-50%);
-    box-shadow: 0px 5px 15px 0px #d8d8d8, inset 0 -15px 0 #ff6200ab,
+    box-shadow: 0px 5px 15px 0px #252422, inset 0 -15px 0 #ff6200ab,
       0 45px 0 #0000;
     border-radius: 20px;
     padding: 1rem 2rem;
@@ -78,7 +82,8 @@
     gap: 1rem;
 
     h2 {
-      color: #ff6000ce;
+      color: #eb5e28;
+      border-bottom: 1px solid #eb5e28;
     }
 
     label {
@@ -86,18 +91,19 @@
       align-items: center;
       justify-content: space-between;
       gap: 5rem;
+      color: #f7f7f7;
 
       input {
         width: 50%;
         padding: 0.5rem 1rem;
         font-family: "Raleway";
-        border: 1px solid #f1f1f1;
+        border: 1px solid #f7f7f7;
         outline: none;
       }
     }
 
     button {
-      background-color: #ff6000ce;
+      background-color: #eb5e28;
       border: none;
       padding: 0.5rem 1rem;
       width: 57.5%;
@@ -112,7 +118,7 @@
     margin-top: 15rem;
 
     h2 {
-      color: #7ecbff;
+      color: #eb5e28;
       margin-bottom: 4rem;
       font-size: 2rem;
     }
@@ -139,41 +145,80 @@
 
           #web {
             height: 40rem;
-            width: 85%;
-            box-shadow: 0px 0px 10px 6px #7ecbffa4;
             border-radius: 10px;
-            aspect-ratio: 1;
+            object-fit: contain;
+            box-shadow: 0px 5px 15px 0px #252422;
           }
 
           #mobile {
             height: 40rem;
-            width: 20%;
-            box-shadow: 0px 0px 10px 6px #7ecbffa4;
             border-radius: 10px;
-            aspect-ratio: 1;
+            object-fit: contain;
+            box-shadow: 0px 5px 15px 0px #252422;
           }
         }
 
         .bottom {
-            position: relative;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: -5rem;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+
+          .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             display: flex;
             flex-direction: column;
-            align-items: center;
-            margin-top: 4rem;
+            background-color: #252422;
+            height: 20rem;
+            width: 30rem;
+            box-shadow: 0px 5px 15px 0px #252422, inset 0 -15px 0 #ff6200ab,
+              0 45px 0 #0000;
+            border-radius: 20px;
+            padding: 1rem 2rem;
 
-            h4 {
-                font-size: 1.5rem;
-                color: #000;
+            h3 {
+              color: #eb5e28;
+              border-bottom: 1px solid #eb5e28;
+              padding-bottom: 0.5rem;
+              font-size: 2rem;
             }
 
-            .decoration {
-                position: absolute;
-                height: 2rem;
-                width: 15rem;
-                background-color: #ff6000ce;
-                top: 70%;
-                border-bottom-right-radius: 250px;
+            span {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: space-between;
+              color: #eb5e28;
+              width: 30rem;
+
+              p {
+                color: #f7f7f7;
+                text-align: left;
+              }
             }
+
+            .view-more {
+              color: #eb5e28;
+              font-size: 1.5rem;
+              border: 1px solid #eb5e28;
+              padding: 0.5rem 1rem;
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: fit-content;
+              align-self: flex-end;
+            }
+          }
         }
       }
 
@@ -189,42 +234,82 @@
           display: flex;
           justify-content: center;
           gap: 0.5rem;
-          width: 80%;
+          flex: 5;
 
           #web {
             height: 40rem;
-            width: 85%;
-            box-shadow: 0px 0px 10px 6px #7ecbffa4;
+            box-shadow: 0px 5px 15px 0px #252422;
             border-radius: 10px;
-            aspect-ratio: 1;
+            flex: 5;
           }
 
           #mobile {
             height: 40rem;
-            width: 20%;
-            box-shadow: 0px 0px 10px 6px #7ecbffa4;
+            box-shadow: 0px 5px 15px 0px #252422;
             border-radius: 10px;
-            aspect-ratio: 1;
+            flex: 1;
           }
         }
 
         .bottom {
-            position: relative;
-            margin-top: 4rem;
+          position: relative;
+          margin-top: -5rem;
+          flex: 1;
 
-            h4 {
-                font-size: 1.5rem;
-                color: #000;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+
+          .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            background-color: #252422;
+            height: 20rem;
+            width: 30rem;
+            box-shadow: 0px 5px 15px 0px #252422, inset 0 -15px 0 #ff6200ab,
+              0 45px 0 #0000;
+            border-radius: 20px;
+            padding: 1rem 2rem;
+
+            h3 {
+              color: #eb5e28;
+              border-bottom: 1px solid #eb5e28;
+              padding-bottom: 0.5rem;
+              font-size: 2rem;
             }
 
-            .decoration {
-                position: absolute;
-                height: 2rem;
-                width: 15rem;
-                background-color: #ff6000ce;
-                top: 70%;
-                border-bottom-right-radius: 150px;
+            span {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: space-between;
+              color: #eb5e28;
+              width: 30rem;
+
+              p {
+                color: #f7f7f7;
+                text-align: left;
+              }
             }
+
+            .view-more {
+              color: #eb5e28;
+              font-size: 1.5rem;
+              border: 1px solid #eb5e28;
+              padding: 0.5rem 1rem;
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: fit-content;
+              align-self: flex-end;
+            }
+          }
         }
       }
     }

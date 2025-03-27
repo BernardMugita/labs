@@ -2,7 +2,13 @@ import React from "react";
 import "./About.scss";
 import AboutBubble from "../../Components/About_bubble/AboutBubble";
 import DoubleCircle from "../../Components/AppComponents/DoubleCircle/DoubleCircle";
-import { RiEmotionHappyFill, RiEye2Fill, RiHandHeartFill, RiInfinityFill, RiSpaceShipFill } from "react-icons/ri";
+import {
+  RiEmotionHappyFill,
+  RiEye2Fill,
+  RiHandHeartFill,
+  RiInfinityFill,
+  RiSpaceShipFill,
+} from "react-icons/ri";
 import { GiFlexibleStar, GiTriangleTarget } from "react-icons/gi";
 
 type Props = {};
@@ -42,8 +48,8 @@ const About = (props: Props) => {
             <div className="body">
               <p>
                 Our Mission is to provide steadfast and reliable mobile and web
-                solutions and to spread technological literacy among the current
-                generation.
+                solutions that leverage on data to help decision makers plan for
+                the future.
               </p>
             </div>
           </div>
@@ -53,9 +59,9 @@ const About = (props: Props) => {
             </h1>
             <div className="body">
               <p>
-                Our Mission is to provide steadfast and reliable mobile and web
-                solutions and to spread technological literacy among the current
-                generation.
+                In the near future we envision a world where technology has
+                solved our grass root problems and we are the ones leading the
+                way.
               </p>
             </div>
           </div>
@@ -72,19 +78,27 @@ const About = (props: Props) => {
         </div>
         <div className="values-body">
           <div className="value">
-            <span><GiTriangleTarget/></span>
-            Reliable Solutions
+            <span>
+              <GiTriangleTarget />
+            </span>
+            Meaningful Solutions
           </div>
           <div className="value">
-            <span><RiInfinityFill/></span>
-            Creativity
+            <span>
+              <RiInfinityFill />
+            </span>
+            Grass Root Solutions
           </div>
           <div className="value">
-            <span><GiFlexibleStar/></span>
-            Flexible
+            <span>
+              <GiFlexibleStar />
+            </span>
+            Data Centered
           </div>
           <div className="value">
-            <span><RiEmotionHappyFill/></span>
+            <span>
+              <RiEmotionHappyFill />
+            </span>
             Customer Centered
           </div>
         </div>

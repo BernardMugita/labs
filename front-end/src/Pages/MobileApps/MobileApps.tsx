@@ -1,9 +1,9 @@
-import React from "react";
 import "./MobileApps.scss";
-import mobileOne from "../../Resources/mobile-one.jpeg";
-import mobileTwo from "../../Resources/mobile-two.jpeg";
-import finalyzeMobile2 from '../../Resources/finalyze_mobile_2.0.jpg'
+import utakula from "../../Resources/utakula.png";
+import finalyzeMobile2 from "../../Resources/finalyze_mobile_2.0.jpg";
+import stroke from "../../Resources/bg-stroke.png";
 import { Link } from "react-router-dom";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 type Props = {};
 
@@ -12,7 +12,7 @@ const MobileApps = (props: Props) => {
     <div className="MobileApps">
       <div className="mobile-intro">
         <div className="mobile-text">
-          <h1>L-IT Mobile Apps</h1>
+          <h1>Jenzi Apps</h1>
           <p>
             We build custom mobile apps for Android and iOS platforms
             prioritizing user experience and performance. We leverage the latest
@@ -42,47 +42,62 @@ const MobileApps = (props: Props) => {
         <button>Get Started . . .</button>
       </div>
       <div className="portfolio">
-        <h2>Our Apps Portfolio</h2>
+        <h2>Some of our products</h2>
         <div className="portfolio-container">
           <div className="row-one-add">
             <div className="left">
-              <img src={finalyzeMobile2} alt="" />
+              <div className="stroke">
+                <img src={finalyzeMobile2} alt="" />
+              </div>
               <div className="screen-text">
-                <Link to='/services/mobile_apps/finalyze_2.0'><h3>Finalyze Mobile 2.0</h3></Link>
-                <span>
-                  Development status: <p>Deployed</p>
-                </span>
-                <span>
-                  Description:{" "}
-                  <p>Mobile budgeting app to help with your financial needs.</p>
-                </span>
+                <img src={stroke} alt="" />
+                <div className="text">
+                  <h3>Finalyze Mobile 2.0</h3>
+                  <span>
+                    Development status: <p>Deployed</p>
+                  </span>
+                  <span>
+                    Description:{" "}
+                    <p>
+                      Mobile budgeting app to help with your financial needs.
+                    </p>
+                  </span>
+                  <Link
+                    to="/services/mobile_apps/finalyze_2.0"
+                    className="view-more"
+                  >
+                    <FaArrowCircleRight />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-          <div className="row-one">
+          <div className="row-one-add">
             <div className="left">
-              <img src={mobileTwo} alt="" />
-              <div className="screen-text">
-                <h3>Finalyze Mobile 1.0</h3>
-                <span>
-                  Development status: <p>Deployed</p>
-                </span>
-                <span>
-                  Description:{" "}
-                  <p>Mobile budgeting app to help with your financial needs.</p>
-                </span>
+              <div className="stroke">
+                <img src={utakula} alt="" />
               </div>
-            </div>
-            <div className="right">
-              <img src={mobileOne} alt="" />
               <div className="screen-text">
-                <h3>Apprisals</h3>
-                <span>
-                  Development status: <p>Deployed</p>
-                </span>
-                <span>
-                  Description: <p>Employee evaluation and apprisal system.</p>
-                </span>
+                <img src={stroke} alt="" />
+                <div className="text">
+                  <h3>Utakula!? Meal Planner</h3>
+                  <span>
+                    Development status: <p>Deployed</p>
+                  </span>
+                  <span>
+                    Description:{" "}
+                    <p>
+                      A meal planning app to help you plan your meals and watch
+                      your diet.
+                    </p>
+                  </span>
+                  <Link
+                    to="/services/mobile_apps/finalyze_2.0"
+                    className="view-more"
+                  >
+                    <FaArrowCircleRight />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

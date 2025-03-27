@@ -4,7 +4,7 @@
   padding: 2rem 4rem;
 
   h1 {
-    color: #ff6000ce;
+    color: #eb5e28;
     font-family: "Candal";
     font-size: 5rem;
   }
@@ -12,6 +12,7 @@
   p {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #f7f7f7;
   }
 
   .team-container {
@@ -23,14 +24,15 @@
 
     .team-member {
       position: relative;
-      width: 45%;
+      width: 35rem;
       height: 10rem;
 
       img {
-        border: 1px solid #ff6000ce;
-        background-color: #ff6000ce;
+        border: 1px solid #eb5e28;
+        background-color: #eb5e28;
         height: 15rem;
         width: 15rem;
+        object-fit: cover;
         border-top-right-radius: 150px;
         border-bottom-left-radius: 100px;
         border-bottom-right-radius: 50px;
@@ -43,7 +45,7 @@
       }
 
       .team-text {
-        box-shadow: 2px 5px 5px 5px #f1f1f1, inset 0 -15px 0 #ff6000ce,
+        box-shadow: 2px 5px 5px 5px #252422, inset 0 -15px 0 #eb5e28,
           0 45px 0 #0000;
         padding: 1rem 2rem 3rem 2rem;
         border-radius: 20px;
@@ -57,9 +59,13 @@
         top: 0;
         left: 50%;
         transform: translate(-50%);
+        background-color: #252422;
 
         h2 {
           margin: 0;
+          color: #eb5e28;
+          border-bottom: 1px solid #eb5e28;
+          margin-bottom: 0.5rem;
         }
 
         p {
@@ -76,6 +82,7 @@
 
           #icon {
             font-size: 3rem;
+            color: #f7f7f7;
           }
         }
       }

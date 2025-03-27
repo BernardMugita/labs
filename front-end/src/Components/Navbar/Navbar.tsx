@@ -16,12 +16,12 @@ const Navbar = (props: Props) => {
       <div className="top_bar">
         <div className="id">
         <img src={navLogo} alt="nav_logo" id="nav_logo"/>
-        <h1>TM</h1>
+        <h4>JENZI</h4>
         </div>
         <div className="site_actions">
           <span className="contact">
-            <h4>Call us now:</h4>
-            <p id="number">+254 796 133754</p>
+            <h4>Reach out to us</h4>
+            <p id="number">info@jenzilabs.com</p>
           </span>
         </div>
       </div>
