@@ -1,6 +1,7 @@
 import React from "react";
 import "./ContactUs.scss";
 import { MdSend } from "react-icons/md";
+import mugita from '../../Resources/portrait.png'
 
 type Props = {};
 
@@ -20,7 +21,7 @@ const ContactUs = (props: Props) => {
           <div className="rep">
             <div className="up">
               <div className="text">
-                <img src="" alt="" />
+                <img src={mugita} alt="" />
                 <h3>Bernard Mugita</h3>
               </div>
               <p>mugitajerome@finalyze.app</p>
@@ -32,15 +33,15 @@ const ContactUs = (props: Props) => {
         <form action="">
           <label htmlFor="">
             <p>Your name:</p>
-            <input type="text" placeholder="What do we call you?" />
+            <input type="text" placeholder="Who should we call you?" />
           </label>
           <label htmlFor="">
             <p>Your email:</p>
-            <input type="text" placeholder="Where can we reach you?" />
+            <input type="text" placeholder="Your email" />
           </label>
           <label htmlFor="" id="textarea">
             <p>Your Message:</p>
-            <textarea name="" id="" placeholder="What would you like to tell us?" />
+            <textarea name="" id="" placeholder="Tell us something, anything." />
           </label>
           <div className="button">
             <button>
