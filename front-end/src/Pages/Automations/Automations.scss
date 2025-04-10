@@ -1,0 +1,206 @@
+.Automations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+
+  .top {
+    display: flex;
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: #252422;
+    border-radius: 5px;
+    height: 25vh;
+
+    .left {
+      flex: 1;
+      border-right: 1px solid #403d39;
+      display: flex;
+      align-items: flex-end;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../../Resources/gray.png);
+      background-size: 15%;
+      background-blend-mode: color-burn;
+      border-radius: 5px 0 0 5px;
+    }
+
+    .right {
+      flex: 8;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.5rem;
+
+      h1 {
+        color: #eb5e28;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+        border-bottom: 2px solid #eb5e28;
+        padding-bottom: 0.5rem;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      p {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #f7f7f7;
+        text-align: left;
+      }
+
+      button {
+        width: fit-content;
+        padding: 1rem 2rem;
+        background-color: #eb5e28;
+        border: none;
+        border-radius: 5px;
+        font-family: "Raleway";
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .tools {
+    display: flex;
+    width: 100%;
+
+    .left {
+      flex: 1;
+      padding: 2rem;
+      border-right: 1px solid #fff;
+
+      h1 {
+        font-size: 5rem;
+        margin: 0;
+        text-align: left;
+        color: #eb5e28;
+        font-weight: bold;
+        // border-bottom: 4px solid #eb5e28;
+      }
+
+      p {
+        text-align: left;
+        font-size: 1.5rem;
+        color: #fff;
+      }
+    }
+
+    .right {
+      flex: 4;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.5rem;
+      padding: 2rem;
+
+      .tool-container {
+        background-color: #252422;
+        width: 35%;
+        height: 15rem;
+        border-radius: 5px;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        .head {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          span {
+            height: 3rem;
+            width: 3rem;
+            box-shadow: 1px 3px 10px #eb5f2852;
+            border-radius: 5px;
+          }
+
+          h3 {
+            color: #eb5e28;
+            font-weight: bold;
+            border-bottom: 2px solid #eb5e28;
+            padding-bottom: 0.5rem;
+          }
+        }
+
+        p {
+          text-align: left;
+          color: #fff;
+          flex: 1;
+        }
+
+        a {
+          text-align: left;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          text-decoration: none;
+          color: #eb5e28;
+          border: 1px solid #eb5e28;
+          padding: 0.5rem 1rem;
+          width: fit-content;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .auto-services {
+    background-color: #252422;
+    border-radius: 5px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+
+    h2 {
+      color: #eb5e28;
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+
+    .service {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+
+      .auto-item {
+        width: 45%;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 1rem;
+
+        h4 {
+          margin: 0;
+          color: #eb5f28;
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          margin-bottom: 1rem;
+
+          #icon {
+            font-size: 1.5rem;
+            background-color: #eb5e284d;
+            color: #252422;
+            padding: 0.5rem;
+            border-radius: 50%;
+          }
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

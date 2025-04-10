@@ -2,34 +2,48 @@
   width: 75%;
 
   .web-intro {
-    height: 70vh;
-    background-color: #eb5e2854;
+    width: 100%;
+    background-color: #252422;
     border-radius: 5px;
-    border-bottom-right-radius: 1000px 550px;
-    box-shadow: 2px 35px 3px 5px #0000;
-    position: relative;
-    text-align: left;
     margin-top: 0.5rem;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: relative;
+    height: 50vh;
+
+    .left {
+      flex: 1;
+      border-right: 1px solid #403d39;
+      display: flex;
+      align-items: flex-end;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../../Resources/gray.png);
+      background-size: 15%;
+      background-blend-mode: color-burn;
+    }
 
     .web-text {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      justify-content: center;
+      flex: 8;
+      padding: 2rem;
 
       h1 {
         margin: 0;
         font-family: "Candal";
         color: #eb5e28;
         font-size: 3rem;
-        margin-top: 10rem;
+        border-bottom: 2px solid #eb5e28;
+        width: fit-content;
       }
 
       p {
-        width: 70%;
+        font-size: 1rem;
         color: #f7f7f7;
-        font-weight: bold;
-        font-size: 1.3rem;
-        text-align: center;
+        text-align: left;
+        z-index: 50;
+        margin-bottom: 4rem;
       }
     }
 
@@ -70,12 +84,13 @@
     height: 20rem;
     width: 30rem;
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%);
     box-shadow: 0px 5px 15px 0px #252422, inset 0 -15px 0 #ff6200ab,
       0 45px 0 #0000;
     border-radius: 20px;
+    border-top: 1px solid #403d39;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;

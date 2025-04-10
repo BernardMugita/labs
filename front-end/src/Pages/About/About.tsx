@@ -26,17 +26,22 @@ const About = (props: Props) => {
       </div>
       <div className="about_us">
         <DoubleCircle />
-        <p>
-          We are a Mobile and Website Development start-up based in Nairobi
-          Kenya that finds creative ways to solve clients problems leveraging on
-          new technologies.
-        </p>
-        <p>
-          L-IT is a visionary organization that targets to spread technological
-          aid to different Kenyans through mobile apps and web solutions. We
-          create apps fully run and maintained by us to provide you with
-          services.
-        </p>
+        <div className="about-container">
+          <div className="left"></div>
+          <div className="right">
+            <p>
+              We are a Mobile and Website Development start-up based in Nairobi
+              Kenya that finds creative ways to solve clients problems
+              leveraging on new technologies.
+            </p>
+            <p>
+              L-IT is a visionary organization that targets to spread
+              technological aid to different Kenyans through mobile apps and web
+              solutions. We create apps fully run and maintained by us to
+              provide you with services.
+            </p>
+          </div>
+        </div>
       </div>
       <div className="mission-vision">
         <h1>Our Mission & Vision</h1>
@@ -64,42 +69,6 @@ const About = (props: Props) => {
                 way.
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="core-values">
-        <div className="back">
-          <div className="heading-circle">
-            <div className="bubble">Our Core Values</div>
-            <h1>
-              <RiHandHeartFill id="heart" />
-            </h1>
-          </div>
-        </div>
-        <div className="values-body">
-          <div className="value">
-            <span>
-              <GiTriangleTarget />
-            </span>
-            Meaningful Solutions
-          </div>
-          <div className="value">
-            <span>
-              <RiInfinityFill />
-            </span>
-            Grass Root Solutions
-          </div>
-          <div className="value">
-            <span>
-              <GiFlexibleStar />
-            </span>
-            Data Centered
-          </div>
-          <div className="value">
-            <span>
-              <RiEmotionHappyFill />
-            </span>
-            Customer Centered
           </div>
         </div>
       </div>

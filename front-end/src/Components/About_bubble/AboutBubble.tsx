@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutBubble.scss";
-import { MdBubbleChart } from "react-icons/md";
+import jenzi from '../../Resources/jenzi-logo-white.png'
 
 type Props = {};
 
@@ -8,7 +8,7 @@ const AboutBubble = (props: Props) => {
   return <div className="About_bubble">
     <div className="big_circle">
       <div className="small_circle">
-        <MdBubbleChart id="bubble"/>
+        <img src={jenzi} alt="" />
       </div>
     </div>
   </div>;

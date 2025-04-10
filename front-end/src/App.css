@@ -5,4 +5,5 @@
   align-items: center;
   background-color: #403d39;
   font-size: 0.9rem;
+  overflow-x: hidden;
 }

@@ -1,7 +1,8 @@
 import React from "react";
 import "./ContactUs.scss";
-import { MdSend } from "react-icons/md";
-import mugita from '../../Resources/portrait.png'
+import { MdSend, MdSupportAgent } from "react-icons/md";
+import mugita from "../../Resources/portrait.png";
+import jenzilit from "../../Resources/jenzi-logo-lit-mass.png";
 
 type Props = {};
 
@@ -9,12 +10,17 @@ const ContactUs = (props: Props) => {
   return (
     <div className="ContactUs">
       <div className="top">
-        <h1>Contact Us</h1>
-        <p>
-          We'd Like To Hear From you, you can speak directly to our
-          representative below or send us a message and we'll get back to you in
-          an instant.
-        </p>
+        <div className="left">{/* <img src={jenzilit} alt="" /> */}</div>
+        <div className="right">
+          <h1>
+            Contact Us <MdSupportAgent />
+          </h1>
+          <p>
+            We'd Like To Hear From you!
+            <br></br> You can speak directly to our representative below or send
+            us a message and we'll get back to you momentarily.
+          </p>
+        </div>
       </div>
       <div className="bottom">
         <div className="representatives">
@@ -24,7 +30,7 @@ const ContactUs = (props: Props) => {
                 <img src={mugita} alt="" />
                 <h3>Bernard Mugita</h3>
               </div>
-              <p>mugitajerome@finalyze.app</p>
+              <p>jeromemugita@jenzilabs.co.ke</p>
             </div>
           </div>
         </div>
@@ -41,10 +47,14 @@ const ContactUs = (props: Props) => {
           </label>
           <label htmlFor="" id="textarea">
             <p>Your Message:</p>
-            <textarea name="" id="" placeholder="Tell us something, anything." />
+            <textarea
+              name=""
+              id=""
+              placeholder="Tell us something, anything."
+            />
           </label>
           <div className="button">
-            <button>
+            <button onClick={() => {}}>
               Submit <MdSend />
             </button>
           </div>

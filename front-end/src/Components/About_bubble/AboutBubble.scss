@@ -1,27 +1,26 @@
 .About_bubble {
-    .big_circle {
-        height: 40rem;
-        width: 40rem;
-        border-radius: 50%;
-        background-color: #eb5e2854;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  .big_circle {
+    height: 40rem;
+    width: 40rem;
+    border-radius: 50%;
+    background-color: #eb5e2854;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        .small_circle {
-            height: 35rem;
-            width: 35rem;
-            box-shadow: 0px 10px 10px 0px #403d39;
-            background-color: #eb5e2854;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    .small_circle {
+      height: 35rem;
+      width: 35rem;
+      box-shadow: 0px 10px 10px 0px #403d39;
+      background-color: #eb5e2854;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-            #bubble {
-                font-size: 10rem;
-                color: #f7f7f7;
-            }
-        }
+      img {
+        height: 20rem;
+      }
     }
+  }
 }

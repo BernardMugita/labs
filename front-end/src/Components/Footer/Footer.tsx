@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import logo from "../../Resources/jenzi-logo-range.png";
 
 type Props = {};
 
@@ -9,7 +10,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="container">
         <div className="right">
-          <h1>JENZI</h1>
+          <img src={logo} alt="" />
           <nav className="nav">
             <a href="#" className="nav-link">
               Privacy Policy

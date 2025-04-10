@@ -2,26 +2,26 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
 import { MdArrowDropDown } from "react-icons/md";
-import navLogo from "../../Resources/logo.png";
+import navLogo from "../../Resources/jenzi-logo-alt.png";
 
 type Props = {};
 
 const Navbar = (props: Props) => {
   const [showSubMenus, setShowSubMenus] = useState<boolean>(false);
   const [showSubMenusRight, setShowSubMenusRight] = useState<boolean>(false);
-  const disabled = true; 
+  const disabled = true;
 
   return (
     <div className="Navbar">
       <div className="top_bar">
         <div className="id">
-        <img src={navLogo} alt="nav_logo" id="nav_logo"/>
-        <h4>JENZI</h4>
+          <img src={navLogo} alt="nav_logo" id="nav_logo" />
+          {/* <h4>JENZI</h4> */}
         </div>
         <div className="site_actions">
           <span className="contact">
             <h4>Reach out to us</h4>
-            <p id="number">info@jenzilabs.com</p>
+            <p id="number">info@jenzilabs.co.ke</p>
           </span>
         </div>
       </div>
@@ -29,7 +29,7 @@ const Navbar = (props: Props) => {
         <div className="links">
           <NavLink to="/">Home</NavLink>
           <div className="about" onMouseLeave={() => setShowSubMenus(false)}>
-            <NavLink  onMouseEnter={() => setShowSubMenus(true)} to="/about" >
+            <NavLink onMouseEnter={() => setShowSubMenus(true)} to="/about">
               About <MdArrowDropDown />
             </NavLink>
             {showSubMenus && (
@@ -53,7 +53,14 @@ const Navbar = (props: Props) => {
             {showSubMenusRight && (
               <div className="sub_menus right">
                 <NavLink to="/services/mobile_apps">Mobile Apps</NavLink>
-                <NavLink to="/services/web_development">Web Development</NavLink>
+                <NavLink to="/services/web_development">
+                  Web Development
+                </NavLink>
+                <NavLink to="/services/automations">Automations</NavLink>
+                <NavLink to="/services/integrations">
+                  3rd Party App Integrations
+                </NavLink>
+                <NavLink to="/services/analysis">Business Analysis</NavLink>
               </div>
             )}
           </div>

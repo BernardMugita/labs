@@ -4,6 +4,8 @@ import finalyzeMobile2 from "../../Resources/finalyze_mobile_2.0.jpg";
 import stroke from "../../Resources/bg-stroke.png";
 import { Link } from "react-router-dom";
 import { FaArrowCircleRight } from "react-icons/fa";
+import jenzilit from "../../Resources/jenzi-logo-lit-mass.png";
+import { MdSmartphone } from "react-icons/md";
 
 type Props = {};
 
@@ -11,19 +13,18 @@ const MobileApps = (props: Props) => {
   return (
     <div className="MobileApps">
       <div className="mobile-intro">
+        <div className="left">{/* <img src={jenzilit} alt="" /> */}</div>
         <div className="mobile-text">
-          <h1>Jenzi Apps</h1>
+          <h1>
+            Jenzi Apps <MdSmartphone />
+          </h1>
           <p>
             We build custom mobile apps for Android and iOS platforms
-            prioritizing user experience and performance. We leverage the latest
+            prioritizing user experience and performance leveraging the latest
             technologies to build scalable and secure apps to serve our client's
             needs.
           </p>
         </div>
-        <span className="triangle-one"></span>
-        <span className="triangle-one two"></span>
-        <span className="triangle-one three"></span>
-        <span className="triangle-one four"></span>
       </div>
       <div className="budget">
         <h2>Tell Us about your App</h2>

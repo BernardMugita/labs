@@ -6,7 +6,7 @@ import arifuWeb from "../../Resources/arifu-desk.png";
 import arifuMobile from "../../Resources/arifu-mob.jpeg";
 import stroke from "../../Resources/bg-stroke.png";
 import { Link } from "react-router-dom";
-import { FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleRight, FaGlobe } from "react-icons/fa";
 
 type Props = {};
 
@@ -14,8 +14,11 @@ const WebDevelopment = (props: Props) => {
   return (
     <div className="WebDevelopment">
       <div className="web-intro">
+        <div className="left"></div>
         <div className="web-text">
-          <h1>Jenzi Sites</h1>
+          <h1>
+            Jenzi Sites <FaGlobe />
+          </h1>
           <p>
             We build custom responsive websites for our clients using the latest
             technologies to create fast, secure, and scalable websites. We
@@ -23,10 +26,6 @@ const WebDevelopment = (props: Props) => {
             meet our client's needs.
           </p>
         </div>
-        <span className="triangle-one"></span>
-        <span className="triangle-one two"></span>
-        <span className="triangle-one three"></span>
-        <span className="triangle-one four"></span>
       </div>
       <div className="budget">
         <h2>Tell us about your dream Website</h2>

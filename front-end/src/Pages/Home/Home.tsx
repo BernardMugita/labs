@@ -27,7 +27,7 @@ import phoneweb from "../../Resources/phone_web.jpeg";
 import finalyze from "../../Resources/finalL.png";
 import arifu from "../../Resources/arifu.png";
 import { Link } from "react-router-dom";
-import { MdDashboardCustomize, MdDataExploration } from "react-icons/md";
+import { MdDashboardCustomize, MdSupport } from "react-icons/md";
 
 type Props = {};
 
@@ -46,8 +46,8 @@ const Home = (props: Props) => {
           </div>
           <div className="right">
             <div className="banner-item">
-              <h4>Data Driven</h4>
-              <MdDataExploration id="banner-icon" />
+              <h4>Business Support</h4>
+              <MdSupport id="banner-icon" />
             </div>
             <div className="banner-item">
               <h4>Custom Solutions</h4>

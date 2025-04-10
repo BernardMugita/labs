@@ -5,34 +5,52 @@
   width: 75%;
 
   .mobile-intro {
-    height: 70vh;
-    background-color: #eb5e2854;
+    height: 50vh;
+    background-color: #252422;
     border-radius: 5px;
-    border-bottom-right-radius: 1000px 550px;
     box-shadow: 2px 35px 3px 5px #0000;
     position: relative;
     text-align: left;
     margin-top: 0.5rem;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+
+    .left {
+      flex: 1;
+      border-right: 1px solid #403d39;
+      display: flex;
+      align-items: flex-end;
+
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../../Resources/gray.png);
+      background-size: 15%;
+      background-blend-mode: color-burn;
+    }
 
     .mobile-text {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      text-align: left;
+      padding: 2rem;
+      justify-content: center;
+      flex: 8;
 
       h1 {
         margin: 0;
         font-family: "Candal";
         color: #eb5e28;
         font-size: 3rem;
-        margin-top: 10rem;
+        border-bottom: 2px solid #eb5e28;
+        width: fit-content;
+        padding-bottom: 0.5rem;
       }
 
       p {
         width: 70%;
         color: #f7f7f7;
         font-weight: bold;
-        font-size: 1.3rem;
-        text-align: center;
+        font-size: 1rem;
+        z-index: 20;
       }
     }
 
@@ -42,8 +60,8 @@
       border-left: 100px solid transparent;
       border-radius: 30px 50px;
       position: absolute;
-      top: 50%;
-      left: 10%;
+      top: 60%;
+      left: 15%;
     }
 
     .two {
@@ -58,12 +76,12 @@
       border-bottom: 50px solid #eb5e2854;
       border-right: 50px solid transparent;
       border-left: 50px solid transparent;
-      top: 20%;
+      top: 50%;
       left: 82.5%;
     }
 
     .four {
-      top: 1%;
+      top: 30%;
       left: 80%;
     }
   }
@@ -73,12 +91,13 @@
     height: 20rem;
     width: 30rem;
     position: absolute;
-    top: 65%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%);
     box-shadow: 0px 5px 15px 0px #252422, inset 0 -15px 0 #ff6200ab,
       0 45px 0 #0000;
     border-radius: 20px;
+    border-top: 1px solid #403d39;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
@@ -120,7 +139,7 @@
 
   .portfolio {
     padding: 4rem;
-    margin-top: 10rem;
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -218,7 +237,7 @@
             }
           }
         }
-      }      
+      }
     }
   }
 }
