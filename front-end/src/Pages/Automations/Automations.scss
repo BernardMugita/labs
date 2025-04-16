@@ -43,6 +43,7 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        font-size: 3rem;
       }
 
       p {
@@ -180,27 +181,47 @@
 
         h4 {
           margin: 0;
+          border-bottom: 2px solid #eb5e28;
           color: #eb5f28;
           display: flex;
           flex-direction: row-reverse;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-end;
           gap: 0.5rem;
           margin-bottom: 1rem;
+          text-align: left;
+          padding-bottom: 1rem;
 
           #icon {
             font-size: 1.5rem;
             background-color: #eb5e284d;
-            color: #252422;
+            color: #eb5e28;
             padding: 0.5rem;
-            border-radius: 50%;
+            border-radius: 5px;
           }
         }
 
         p {
           margin: 0;
+          color: #fff;
+          text-align: left;
         }
       }
+    }
+  }
+
+  .process {
+    padding: 2rem;
+    background: url(../../Resources/dashed_stroke.png);
+    height: 80vh;
+    width: 100%;
+    position: relative;
+
+    h2 {
+      color: #eb5e28;
+      margin: 0;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
     }
   }
 }

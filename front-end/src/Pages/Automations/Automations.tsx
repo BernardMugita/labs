@@ -1,13 +1,21 @@
-import React from "react";
 import "./Automations.scss";
 import { GiAutomaticSas } from "react-icons/gi";
-import { FaArrowAltCircleRight, FaArrowCircleDown } from "react-icons/fa";
 import {
+  FaArrowAltCircleRight,
+  FaArrowCircleDown,
+  FaPuzzlePiece,
+  FaToolbox,
+} from "react-icons/fa";
+import ProcessItem from "../../Components/ProcessItem/ProcessItem";
+import {
+  MdLightbulb,
   MdOutlineBackup,
   MdOutlineGeneratingTokens,
   MdOutlineMailOutline,
   MdOutlineNotifications,
+  MdOutlineScheduleSend,
 } from "react-icons/md";
+import { TbSettingsAutomation } from "react-icons/tb";
 
 type Props = {};
 
@@ -123,6 +131,35 @@ const Automations = (props: Props) => {
             </h4>
             <p>Automate lead generation to increase your sales and revenue.</p>
           </div>
+        </div>
+      </section>
+      <section className="process">
+        <h2>Our Automation Channel</h2>
+        <div className="process-body">
+          <ProcessItem
+            process_class_name="needs"
+            process_icon={<FaPuzzlePiece id="icon" />}
+            process_name="Step 1: Define Information needs"
+            process_description="lorem"
+          />
+          <ProcessItem
+            process_class_name="tooling"
+            process_icon={<FaToolbox id="icon" />}
+            process_name="Step 2: Tooling/Selecting Appropirate Tools"
+            process_description="lorem"
+          />
+          <ProcessItem
+            process_class_name="automation"
+            process_icon={<TbSettingsAutomation id="icon" />}
+            process_name="Step 3: Automate Processes"
+            process_description="lorem"
+          />
+          <ProcessItem
+            process_class_name="cron"
+            process_icon={<MdOutlineScheduleSend id="icon" />}
+            process_name="Step 4: Schedule Cron Jobs"
+            process_description="lorem"
+          />
         </div>
       </section>
     </div>

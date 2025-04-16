@@ -28,7 +28,14 @@ const Navbar = (props: Props) => {
       <div className="bottom_bar">
         <div className="links">
           <NavLink to="/">Home</NavLink>
-          <div className="about" onMouseLeave={() => setShowSubMenus(false)}>
+          <div
+            className="about"
+            onMouseLeave={() =>
+              setTimeout(() => {
+                setShowSubMenus(false);
+              }, 2)
+            }
+          >
             <NavLink onMouseEnter={() => setShowSubMenus(true)} to="/about">
               About <MdArrowDropDown />
             </NavLink>
@@ -41,7 +48,11 @@ const Navbar = (props: Props) => {
           </div>
           <div
             className="services"
-            onMouseLeave={() => setShowSubMenusRight(false)}
+            onMouseLeave={() =>
+              setTimeout(() => {
+                setShowSubMenusRight(false);
+              }, 2)
+            }
           >
             <NavLink
               aria-disabled={disabled}

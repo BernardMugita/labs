@@ -1,0 +1,80 @@
+@mixin flex($direction, $justify, $align, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+.process-item {
+  background-color: #252422;
+  padding: 2rem;
+  border-radius: 100x;
+  box-shadow: 0 0 10px 1px #252422;
+  width: 15%;
+
+  .top-row {
+    @include flex(row, unset, center, 0.5rem);
+    border-bottom: 2px solid #eb5e28;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+    #icon {
+      height: 2rem;
+      width: 4rem;
+      box-shadow: 1px 3px 10px #eb5f2852;
+      border-radius: 5px;
+      color: #eb5e28;
+      padding: 0.5rem;
+    }
+
+    h4 {
+      color: #eb5e28;
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  .bottom-row {
+    span {
+      @include flex(row, unset, center, 0.5rem);
+      text-align: left;
+      text-decoration: none;
+      color: #eb5e28;
+      border: 1px solid #eb5e28;
+      padding: 0.5rem 1rem;
+      width: fit-content;
+      border-radius: 5px;
+
+      p{
+        margin: 0;
+      }
+
+      &:hover {
+        color: #fff;
+        background-color: #eb5e28;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.tooling {
+    position: absolute;
+    left: 25%;
+    top: 60%;
+}
+
+.automation {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+.cron {
+    position: absolute;
+    right: 0%;
+    top: 65%;
+}
+
+
