@@ -207,59 +207,76 @@
     }
 
     .form {
-      width: 50%;
-      background-color: #252422;
-      box-shadow: 0px 5px 15px 0px #252422, inset 0 -15px 0 #ff6200ab,
-        0 45px 0 #0000;
-      border-radius: 20px;
-      border-top: 1px solid #403d39;
-      padding: 2rem;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      align-items: center;
+      gap: 1.5rem;
+      width: 100%;
 
       label {
         display: flex;
         flex-direction: column;
-        text-align: left;
-        justify-content: space-between;
-        gap: 0.5rem;
-        color: #f7f7f7;
+        align-items: flex-start;
+        border: 2px solid #eb5e28;
+        border-radius: 35px;
+        padding: 0.5rem 1.5rem;
+        color: #eb5e28;
+        font-weight: bold;
+        position: relative;
+        background-color: #252422;
+        width: 55%;
+
+        p {
+          margin: 0;
+          position: absolute;
+          top: -20%;
+          background-color: #403d39;
+          padding: 0rem 0.5rem;
+          color: #eb5e28;
+        }
+
+        #mes-label {
+          top: -5%;
+        }
 
         input {
+          width: 90%;
           padding: 0.5rem 1rem;
-          font-family: "Raleway";
           border: none;
-          background-color: #ffffff4b;
-          border-radius: 5px;
-          color: #fff;
           outline: none;
+          font-family: "Raleway";
           font-size: 1rem;
+          background-color: transparent;
+          color: #f7f7f7;
+          background-color: #252422;
         }
 
         textarea {
-          padding: 0.5rem 1rem;
-          font-family: "Raleway";
-          border: none;
-          background-color: #ffffff4b;
-          border-radius: 5px;
-          color: #fff;
-          outline: none;
-          font-size: 1rem;
+          width: 90%;
           height: 10rem;
+          padding: 0.5rem 1rem;
+          border: none;
+          outline: none;
+          font-family: "Raleway";
+          font-size: 1rem;
+          background-color: transparent;
+          color: #f7f7f7;
+          background-color: #252422;
         }
       }
 
       button {
         background-color: #eb5e28;
         border: none;
-        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        padding: 1rem;
         align-self: center;
         font-family: "Raleway";
         font-weight: bold;
         color: #fff;
         width: 50%;
         font-size: 1rem;
+        margin-top: 2rem;
 
         &:hover {
           color: #eb5e28;

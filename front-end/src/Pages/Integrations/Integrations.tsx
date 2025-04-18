@@ -116,16 +116,16 @@ const Integrations: React.FC<Props> = ({}) => {
           </div>
         </div>
       </section>
-      <div className="divider"></div>
+      {/* <div className="divider"></div> */}
       <section className="more">
         <h2>We'd like to hear from you</h2>
         <div className="form">
           <label htmlFor="">
-            Email Address:
+            <p>Email Address:</p>
             <input type="text" placeholder="Enter your email address" />
           </label>
           <label htmlFor="">
-            Message:
+            <p id="mes-label">Message:</p>
             <textarea placeholder="What kind of integration are you looking for?" />
           </label>
           <button>Submit . . .</button>
