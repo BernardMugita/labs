@@ -60,9 +60,9 @@ const Automations = (props: Props) => {
               Automate your workflows with Pipedream. <br />
               Connect your apps and automate your tasks.
             </p>
-            <a href="">
+            <button>
               Learn more <FaArrowAltCircleRight />
-            </a>
+            </button>
           </div>
           <div className="tool-container">
             <div className="head">
@@ -76,9 +76,9 @@ const Automations = (props: Props) => {
               Write scripts to automate your tasks and workflows. <br />
               Run them at scheduled times or on specific events.
             </p>
-            <a href="">
+            <button>
               Learn more <FaArrowAltCircleRight />
-            </a>
+            </button>
           </div>
           <div className="tool-container">
             <div className="head">
@@ -91,9 +91,9 @@ const Automations = (props: Props) => {
               Automate your workflows with Webhooks. <br />
               Configure webhooks to send and receive data. <br />
             </p>
-            <a href="">
+            <button>
               Learn more <FaArrowAltCircleRight />
-            </a>
+            </button>
           </div>
         </div>
       </section>
