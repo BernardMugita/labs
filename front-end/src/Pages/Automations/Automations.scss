@@ -1,8 +1,27 @@
+@mixin flex($direction, $justify, $align, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin divider() {
+  width: 100%;
+  height: 1px;
+  background-color: #eb5e28;
+  margin: 20px 0;
+}
+
 .Automations {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 75%;
+
+  .divider {
+    @include divider();
+  }
 
   .top {
     display: flex;
@@ -52,6 +71,7 @@
         font-size: 1rem;
         color: #f7f7f7;
         text-align: left;
+        margin-bottom: 2rem;
       }
 
       button {
@@ -85,7 +105,6 @@
         text-align: left;
         color: #eb5e28;
         font-weight: bold;
-        // border-bottom: 4px solid #eb5e28;
       }
 
       p {
@@ -123,6 +142,14 @@
             width: 3rem;
             box-shadow: 1px 3px 10px #eb5f2852;
             border-radius: 5px;
+            color: #eb5e28;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #auto-icon {
+              font-size: 2rem;
+            }
           }
 
           h3 {
@@ -150,6 +177,12 @@
           padding: 0.5rem 1rem;
           width: fit-content;
           border-radius: 5px;
+
+          &:hover {
+            color: #fff;
+            background-color: #eb5e28;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -221,7 +254,9 @@
       color: #eb5e28;
       margin: 0;
       margin-bottom: 2rem;
-      font-size: 1.5rem;
+      font-size: 3rem;
+      text-align: left;
+      font-weight: bold;
     }
   }
 }

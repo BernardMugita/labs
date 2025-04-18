@@ -1,21 +1,21 @@
 import "./Automations.scss";
-import { GiAutomaticSas } from "react-icons/gi";
+import { GiAutomaticSas, GiPuzzle } from "react-icons/gi";
 import {
   FaArrowAltCircleRight,
   FaArrowCircleDown,
-  FaPuzzlePiece,
-  FaToolbox,
+  FaPython,
 } from "react-icons/fa";
 import ProcessItem from "../../Components/ProcessItem/ProcessItem";
 import {
-  MdLightbulb,
   MdOutlineBackup,
   MdOutlineGeneratingTokens,
   MdOutlineMailOutline,
   MdOutlineNotifications,
-  MdOutlineScheduleSend,
+  MdWebhook,
 } from "react-icons/md";
-import { TbSettingsAutomation } from "react-icons/tb";
+import { TbSettingsAutomation, TbSquareLetterP } from "react-icons/tb";
+import { PiToolboxFill } from "react-icons/pi";
+import { GrSchedulePlay } from "react-icons/gr";
 
 type Props = {};
 
@@ -52,7 +52,7 @@ const Automations = (props: Props) => {
           <div className="tool-container">
             <div className="head">
               <span>
-                <img src="" alt="" />
+                <TbSquareLetterP id="auto-icon" />
               </span>
               <h3>Pipedream</h3>
             </div>
@@ -67,7 +67,7 @@ const Automations = (props: Props) => {
           <div className="tool-container">
             <div className="head">
               <span>
-                <img src="" alt="" />
+                <FaPython id="auto-icon" />
               </span>
               <h3>Python</h3>
             </div>
@@ -83,7 +83,7 @@ const Automations = (props: Props) => {
           <div className="tool-container">
             <div className="head">
               <span>
-                <img src="" alt="" />
+                <MdWebhook id="auto-icon" />
               </span>
               <h3>Webhooks</h3>
             </div>
@@ -134,31 +134,56 @@ const Automations = (props: Props) => {
         </div>
       </section>
       <section className="process">
-        <h2>Our Automation Channel</h2>
+        <h2>Automation Channel</h2>
+        {/* <div className="divider"></div> */}
         <div className="process-body">
           <ProcessItem
             process_class_name="needs"
-            process_icon={<FaPuzzlePiece id="icon" />}
+            process_icon={<GiPuzzle id="icon" />}
             process_name="Step 1: Define Information needs"
-            process_description="lorem"
+            process_description="
+              Your information needs are the foundation of your automation
+              strategy. Identify the data you need to collect, process, and
+              analyze.
+
+              These will help us determine the best automation tools and
+              workflows for your business.
+            "
           />
           <ProcessItem
             process_class_name="tooling"
-            process_icon={<FaToolbox id="icon" />}
+            process_icon={<PiToolboxFill id="icon" />}
             process_name="Step 2: Tooling/Selecting Appropirate Tools"
-            process_description="lorem"
+            process_description="
+              After identifying your information needs, we will select the
+              appropriate tools and software to automate your workflows.
+
+              The right tools will help streamline your processes, reduce
+              manual labor, and increase productivity.
+            "
           />
           <ProcessItem
             process_class_name="automation"
             process_icon={<TbSettingsAutomation id="icon" />}
             process_name="Step 3: Automate Processes"
-            process_description="lorem"
+            process_description="
+              We will use the information needs and selected tools to automate
+              your processes.
+            "
           />
           <ProcessItem
             process_class_name="cron"
-            process_icon={<MdOutlineScheduleSend id="icon" />}
+            process_icon={<GrSchedulePlay id="icon" />}
             process_name="Step 4: Schedule Cron Jobs"
-            process_description="lorem"
+            process_description="
+              The final step is to schedule cron jobs to run your automated
+              workflows at the desired frequency. This will ensure that your
+              processes run smoothly and efficiently.
+
+              We propose to use Pipedream as our cron job scheduler. Pipedream
+              is a powerful and flexible platform that allows us to create
+              custom workflows and automate complex tasks.
+            "
           />
         </div>
       </section>

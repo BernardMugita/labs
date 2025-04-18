@@ -19,13 +19,15 @@
     padding-bottom: 1rem;
     margin-bottom: 1rem;
 
-    #icon {
-      height: 2rem;
-      width: 4rem;
+    span {
+      padding: 0.5rem;
       box-shadow: 1px 3px 10px #eb5f2852;
       border-radius: 5px;
-      color: #eb5e28;
-      padding: 0.5rem;
+
+      #icon {
+        color: #eb5e28;
+        font-size: 2rem;
+      }
     }
 
     h4 {
@@ -46,7 +48,7 @@
       width: fit-content;
       border-radius: 5px;
 
-      p{
+      p {
         margin: 0;
       }
 
@@ -60,21 +62,19 @@
 }
 
 .tooling {
-    position: absolute;
-    left: 25%;
-    top: 60%;
+  position: absolute;
+  left: 25%;
+  top: 60%;
 }
 
 .automation {
-    position: absolute;
-    left: 45%;
-    top: 20%;
+  position: absolute;
+  left: 45%;
+  top: 20%;
 }
 
 .cron {
-    position: absolute;
-    right: 0%;
-    top: 65%;
+  position: absolute;
+  right: 0%;
+  top: 65%;
 }
-
-

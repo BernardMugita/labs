@@ -1,0 +1,82 @@
+@mixin flex($direction, $justify, $align, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+.ProcessPopUp {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #00000052;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .popup-body {
+    background-color: #252422;
+    width: 25%;
+    padding: 2rem;
+
+    .process-head {
+      @include flex(row, unset, center, 1rem);
+
+      h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        border-bottom: 2px solid #eb5f28;
+        padding-bottom: 0.5rem;
+      }
+
+      span {
+        padding: 0.5rem;
+        box-shadow: 1px 3px 10px #eb5f2852;
+        border-radius: 5px;
+
+        #icon {
+          color: #eb5e28;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .process-body {
+      p {
+        text-align: left;
+        color: #fff;
+        margin: 0;
+        line-height: 2rem;
+        padding: 2rem 0
+      }
+
+      button {
+        @include flex(row, unset, center, 0.5rem);
+        text-align: left;
+        text-decoration: none;
+        color: #eb5e28;
+        border: 1px solid #eb5e28;
+        padding: 0.5rem 1rem;
+        width: fit-content;
+        border-radius: 5px;
+        background-color: transparent;
+        font-family: "Raleway";
+        font-size: 1rem;
+
+        p {
+          margin: 0;
+        }
+
+        &:hover {
+          color: #fff;
+          background-color: #eb5e28;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
