@@ -1,5 +1,4 @@
 import "./ProcessPopUp.scss";
-import { MdClose } from "react-icons/md";
 
 type Props = {
   title: string;
