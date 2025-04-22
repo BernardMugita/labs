@@ -68,9 +68,9 @@ const Navbar = (props: Props) => {
                   Web Development
                 </NavLink>
                 <NavLink to="/services/automations">Automations</NavLink>
-                <NavLink to="/services/integrations">
+                {/* <NavLink to="/services/integrations">
                   3rd Party App Integrations
-                </NavLink>
+                </NavLink> */}
                 <NavLink to="/services/analysis">Business Analysis</NavLink>
               </div>
             )}
