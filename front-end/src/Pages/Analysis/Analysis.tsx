@@ -17,7 +17,6 @@ import {
   MdOnlinePrediction,
   MdOutlineSentimentVerySatisfied,
 } from "react-icons/md";
-import { RiSecurePaymentFill } from "react-icons/ri";
 
 type Props = {};
 

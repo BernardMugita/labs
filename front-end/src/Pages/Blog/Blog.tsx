@@ -1,5 +1,5 @@
 import React from "react";
-import "./Blog.scss";
+import "./Styles/Blog.scss";
 
 type Props = {};
 
